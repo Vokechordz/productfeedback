@@ -8,13 +8,13 @@ const HamMenu = () => {
     const styless = {
         bmBurgerButton: {
           position: 'fixed',
-          width: '36px',
-          height: '30px',
+          width: '24px',
+          height: '18px',
           right: '36px',
-          top: '36px'
+          top: '55px'
         },
         bmBurgerBars: {
-          background: '#373a47'
+          background: 'white'
         },
         bmBurgerBarsHover: {
           background: '#a90000'
@@ -88,12 +88,12 @@ const HamMenu = () => {
 
             <div className={styles.dashthree3}>
             <ul><li>In-progress</li></ul>
-                <p>2</p>
+                <p>3</p>
             </div>
 
             <div className={styles.dashthree4}>
             <ul><li>Live</li></ul>
-                <p>2</p>
+                <p>1</p>
             </div>
         </div>
          </Menu>

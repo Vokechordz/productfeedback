@@ -160,6 +160,10 @@
         width: 100%;
         border-radius: 0;
     }
+
+    .dashone h4 {
+        font-size: 15px;
+    }
 }
 
 

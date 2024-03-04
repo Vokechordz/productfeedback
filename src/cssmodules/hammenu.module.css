@@ -116,4 +116,26 @@
     margin-top: 10px;
 }
 
+@media screen and (max-width: 660px) {
+    .dashtwo button {
+        font-size: 12px;
+    }
+
+    .dashthree1 h4 {
+        font-size: 15px;
+    }
+
+    .dashthree1 a {
+        font-size: 14px;
+    }
+
+    .dashthree2 ul, .dashthree3 ul, .dashthree4 ul {
+        font-size: 15px;
+    }
+
+    .dashthree2 p, .dashthree3 p, .dashthree4 p {
+        font-size: 12px;
+    }
+}
+
 

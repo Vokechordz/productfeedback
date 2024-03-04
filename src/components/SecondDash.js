@@ -14,12 +14,12 @@ const SecondDash = () => {
   return (
     <div className={styles.seconddash}>
         <div className={styles.seconddash1}>
-          <img src={bulb} alt="" />
+          <img className={styles.firstimage} src={bulb} alt="" />
           <h3>6 Suggestions</h3>
 
           <div  className={styles.dropdown}>
             <p>Sort by:</p>
-          <button onClick={handleClicked} className={styles.dropbtn}>Most Upvotes 
+          <button onClick={handleClicked} className={styles.dropbtn}><p>Most Upvotes</p> 
       <img src={caret} alt="" />
     </button>
     <div style={clicked? {display:'block'}: null} className={styles.dropdowncontent}>
