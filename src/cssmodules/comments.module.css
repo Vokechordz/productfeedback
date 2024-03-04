@@ -268,4 +268,8 @@
     .comments3 p {
         font-size: 11px;
     }
+
+    .comments3 {
+        gap: 3px;
+    }
 }
