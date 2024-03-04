@@ -3,6 +3,7 @@ import styles from '../cssmodules/seconddash.module.css'
 import bulb from '../images/bulb_1769253.png'
 import caret from '../images/down-arrow_10495645.png'
 import { useState } from 'react'
+import Comments from './Comments'
 
 const SecondDash = () => {
 
@@ -32,6 +33,9 @@ const SecondDash = () => {
        
           <button>+ Add Feedback</button>
         </div>
+
+
+        <Comments />
     </div>
   )
 }

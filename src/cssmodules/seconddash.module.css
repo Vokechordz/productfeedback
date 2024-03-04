@@ -1,7 +1,7 @@
 .seconddash {
-    background-color: lavender;
     display: flex;
     flex-direction: column;
+    gap: 25px;
     width: 70%;
 }
 
@@ -114,9 +114,7 @@
     cursor: pointer;
   }
 
-  @media screen and (max-width: 11252x) {
-
-  }
+ 
   
   @media screen and (max-width: 972px) {
     .seconddash {
@@ -165,6 +163,7 @@
     .dropdowncontent {
         top: 190px;
         padding: 10px 14px;
+        width: 200px;
     }
 
     .dropdowncontent a {
@@ -198,7 +197,7 @@
     }
 
     .dropdowncontent {
-        top: 190px;
+        top: 180px;
         padding: 10px 14px;
     }
 
@@ -218,7 +217,7 @@
     }
 
     .dropdowncontent {
-        top: 190px;
+        top: 180px;
         padding: 8px 12px;
     }
 }

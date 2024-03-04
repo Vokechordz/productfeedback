@@ -1,7 +1,6 @@
 import React from 'react'
 import { bubble as Menu } from 'react-burger-menu'
 import styles from '../cssmodules/hammenu.module.css'
-import Hamburger from './Hamburger'
 
 const HamMenu = () => {
 

@@ -1,0 +1,262 @@
+.comments {
+    background-color: white;
+    padding: 34px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.firstbtn {
+    display: flex;
+    flex-direction: column;
+    color: #373f68;
+    font-weight: bold;
+    height: 80px;
+    border: none;
+    align-items: center;
+    gap: 5px;
+    background-color: hsla(240, 67%, 94%,0.4);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.firstbtn p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.firstbtn:hover {
+    background-color: hsla(282, 90%, 66%,0.3);
+    cursor: pointer;
+}
+
+.firstbtn:active {
+    background-color: #4661e6;
+    color: white;
+}
+
+.firstbtn img {
+    width: 20px;
+    filter: brightness(100%);
+}
+
+.comments2 {
+    margin-left: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.comments2 h2 {
+    color: #373f68;
+}
+
+.comments2 p {
+    font-size: 22px;
+    color: hsla(230, 31%, 31%,0.8);
+}
+
+.comments2 button {
+    padding: 13px;
+    color: #4661e6;
+    margin-top: 10px;
+    background-color: hsla(240, 67%, 94%,0.4);
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 8px;
+    width: 150px;
+}
+
+
+.comments3 {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    gap: 10px;
+    align-items: center;
+}
+
+.comments3 img {
+    display: inline-block;
+    object-fit: contain;
+    width: 25px;
+}
+
+.comments3 p {
+    font-weight: bold;
+    font-size: 22px;
+    color: #373f68;
+}
+
+@media screen and (max-width: 1130px) {
+    .comments2 h2 {
+        font-size: 20px;
+    }
+
+    .comments2 p {
+        font-size: 18px;
+    }
+
+    .comments2 button {
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    .comments3 img {
+        width: 20px;
+    }
+
+    .comments3 p {
+        font-size: 18px;
+    }
+
+    .firstbtn {
+        height: 75px;
+        padding: 13px;
+        border-radius: 10px;
+    }
+
+    .firstbtn img {
+        width: 18px;
+    }
+
+    .firstbtn p {
+        font-size: 15px;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 988px) {
+    .comments {
+        padding: 30px;
+    }
+
+    .comments2 {
+        margin-left: 35px;
+    }
+}
+
+@media screen and (max-width: 638px) {
+    .comments2 h2 {
+        font-size: 16px;
+    }
+
+    .comments2 p {
+        font-size: 16px;
+    }
+
+    .comments2 button {
+        font-size: 13px;
+        padding: 4px;
+    }
+}
+
+@media screen and (max-width: 582px) {
+    .comments2 {
+        margin-left: 18px;
+    }
+
+    .comments {
+        padding: 15px;
+    }
+
+    .comments3 img {
+        width: 18px;
+    }
+    
+    .comments3 p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 525px) {
+    .firstbtn {
+        height: 70px;
+        padding: 9px;
+        border-radius: 10px;
+    }
+
+    .firstbtn img {
+        width: 15px;
+    }
+
+    .firstbtn p {
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .comments2 h2 {
+        font-size: 14px;
+    }
+
+    .comments2 p {
+        font-size: 14px;
+    }
+
+    .comments2 button {
+        font-size: 11px;
+        padding: 5px;
+    }
+
+    .comments2 {
+        margin-left: 16px;
+    }
+
+    .comments {
+        padding: 15px;
+    }
+
+    .comments3 img {
+        width: 15px;
+    }
+    
+    .comments3 p {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 468px) {
+    .firstbtn {
+        height: 8px;
+        padding: 9px;
+        border-radius: 10px;
+    }
+
+    .firstbtn img {
+        width: 13px;
+    }
+
+    .firstbtn p {
+        font-size: 11px;
+        font-weight: bold;
+    }
+
+    .comments2 h2 {
+        font-size: 12px;
+    }
+
+    .comments2 p {
+        font-size: 12px;
+    }
+
+    .comments2 button {
+        font-size: 9px;
+        padding: 5px;
+    }
+
+    .comments2 {
+        margin-left: 15px;
+    }
+
+    .comments {
+        padding: 15px;
+    }
+
+    .comments3 img {
+        width: 15px;
+    }
+    
+    .comments3 p {
+        font-size: 13px;
+    }
+}
