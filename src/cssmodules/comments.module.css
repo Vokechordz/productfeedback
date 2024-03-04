@@ -148,7 +148,6 @@
 
     .comments2 button {
         font-size: 13px;
-        padding: 4px;
     }
 }
 
@@ -196,7 +195,6 @@
 
     .comments2 button {
         font-size: 11px;
-        padding: 5px;
     }
 
     .comments2 {
@@ -215,9 +213,11 @@
         font-size: 15px;
     }
 }
+
+
 @media screen and (max-width: 468px) {
     .firstbtn {
-        height: 8px;
+        height: 65px;
         padding: 9px;
         border-radius: 10px;
     }
@@ -240,8 +240,7 @@
     }
 
     .comments2 button {
-        font-size: 9px;
-        padding: 5px;
+        font-size: 10px;
     }
 
     .comments2 {
@@ -258,5 +257,15 @@
     
     .comments3 p {
         font-size: 13px;
+    }
+}
+@media screen and (max-width: 410px) {
+
+    .comments3 img {
+        width: 13px;
+    }
+    
+    .comments3 p {
+        font-size: 11px;
     }
 }
