@@ -1,0 +1,119 @@
+.hammenu {
+    background-color: lavender;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media screen and (min-width: 660px) {
+    .hammenu {
+        position: absolute;
+        left: -9999999999999999px;display: none;
+    }
+}
+
+
+
+.dashtwo {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    column-gap: 20px;
+}
+
+
+.dashtwo button {
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    color: #4661e6;
+    font-weight: bold;
+    background-color: hsla(240, 67%, 94%,0.5);
+}
+
+.dashtwo button:hover {
+    color: white;
+    background-color: #4661e6;
+    cursor: pointer;
+    transition: ease-in-out0.2s;
+}
+
+.dashthree {
+    background-color: white;
+    padding: 20px 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.dashthree1 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.dashthree1 h4 {
+    color: #373f68;
+}
+.dashthree1 a {
+    color:#4661e6 ;
+}
+
+.dashthree2 {
+    color: #373f68;
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashthree2 ul li::marker {
+    color: #d73737;
+}
+
+
+.dashthree3 {
+    color: #373f68;
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashthree3 ul li::marker {
+    color: #ad1fea;
+}
+
+.dashthree4 {
+    color: #373f68;
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashthree4 ul li::marker {
+    color: #cfd7ff;
+}
+
+.dashthree2 p, .dashthree3 p, .dashthree4 p{
+    font-weight: bold;
+    color: hsla(230, 31%, 31%,0.7);
+}
+
+.dashthree2, .dashthree3, .dashthree4 {
+    margin-top: 10px;
+}
+
+

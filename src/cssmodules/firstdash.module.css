@@ -1,0 +1,170 @@
+.firstdash {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 20%;
+}
+
+.dashone {
+    border-radius: 10px;
+    background-image:  radial-gradient(128.88% 128.88% at 103.9% -10.39%,#e84d70 0%,#a337f6 53.09%,#28a7ed 100%);;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 80px 10px 20px;
+}
+
+.dashone h4 {
+    font-size: 20px;
+    color: white;
+}
+
+.dashone p {
+    color: hsla(0, 0%, 100%, 0.8);
+    font-size: 15px;
+}
+
+.dashtwo {
+    background-color: white;
+    border-radius: 10px;
+    padding: 19px 12px 19px 19px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.dashtwo button {
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: none;
+    color: #4661e6;
+    font-weight: bold;
+    background-color: hsla(240, 67%, 94%,0.5);
+}
+
+.dashtwo button:hover {
+    color: white;
+    background-color: #4661e6;
+    cursor: pointer;
+    transition: ease-in-out0.2s;
+}
+
+.dashthree {
+    background-color: white;
+    padding: 20px 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dashthree1 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.dashthree1 h4 {
+    color: #373f68;
+}
+.dashthree1 a {
+    color:#4661e6 ;
+}
+
+.dashthree2 {
+    color: #373f68;
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashthree2 ul li::marker {
+    color: #d73737;
+}
+
+
+.dashthree3 {
+    color: #373f68;
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashthree3 ul li::marker {
+    color: #ad1fea;
+}
+
+.dashthree4 {
+    color: #373f68;
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashthree4 ul li::marker {
+    color: #cfd7ff;
+}
+
+.dashthree2 p, .dashthree3 p, .dashthree4 p{
+    font-weight: bold;
+    color: hsla(230, 31%, 31%,0.7);
+}
+
+
+@media screen and (max-width: 1152px) {
+    .firstdash {
+        width: 22%;
+    }
+}
+
+
+@media screen and (max-width: 1071px) {
+    .firstdash {
+        width: 24%;
+    }
+}
+
+
+@media screen and (max-width: 972px) {
+    .firstdash {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 915px) {
+    .firstdash {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .dashone, .dashtwo, .dashthree {
+        width: 33.3%;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .dashthree, .dashtwo {
+        position: absolute;
+        left: -999999999999999px;
+    }
+
+    .dashone {
+        width: 100%;
+        border-radius: 0;
+    }
+}
+
+
+
+
+
+
+
