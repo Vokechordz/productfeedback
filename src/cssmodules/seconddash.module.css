@@ -220,5 +220,10 @@
         top: 180px;
         padding: 8px 12px;
     }
+
+    .seconddash1 button:nth-child(4) {
+        padding: 12px 18px;
+        font-size: 11px;
+    }
 }
  
