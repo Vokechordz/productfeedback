@@ -1,29 +1,41 @@
 import React from 'react'
 import styles from '../cssmodules/comments.module.css'
-import chat from '../images/chat_10802188.png'
-import caretup from '../images/arrow_5475249.png'
+import { useGetFeedbacksQuery } from '../features/feedbacks/feedbacksApiSlice'
+import Feedback from './Feedback'
 
 const Comments = () => {
-  return (
-    <div className={styles.comments}>
-        <button className={styles.firstbtn}>
-            <img src={caretup} alt="" />
-            <p>112</p>
-        </button>
 
-        <div className={styles.comments2}>
-            <h2>Add tags for solutions</h2>
-            <p>Easier to search for solutions based on a specific stack</p>
-            <button>Enhancement</button>
-        </div>
+  const {
+    data: feedbacks,
+    isLoading,
+    isSuccess,
+    isError,
+    error
+  }= useGetFeedbacksQuery()
 
-        <div className={styles.comments3}>
-            <img src={chat} alt="" />
-            <p>2</p>
-        </div>
+  /* const dataArr= Object.values(feedbacks?.entities)
+  console.log(dataArr) */
 
-    </div> //end of comments div
-  )
+
+  let content
+
+  if (isLoading) content= <p>Loading...</p>
+
+  if (isSuccess) {
+    const { ids } = feedbacks
+
+    const tableContent = ids?.length
+        ? ids.map(feedbackId => <Feedback key={feedbackId} feedbackId={feedbackId} />)
+        : null
+
+    content = (
+       <div>
+        {tableContent}
+       </div>
+    )
+}
+
+  return content
 }
 
 export default Comments

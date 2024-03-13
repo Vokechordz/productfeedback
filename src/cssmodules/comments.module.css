@@ -1,8 +1,9 @@
 .comments {
     background-color: white;
     padding: 34px;
-    border-radius: 10px;
+    border-radius: 15px;
     display: flex;
+    margin-bottom: 30px;
     flex-direction: row;
 }
 
@@ -140,7 +141,9 @@
 
 @media screen and (max-width: 660px) {
     .comments {
-        margin: 0 13px;
+        margin-left: 13px;
+        margin-right: 13px;
+        margin-bottom: 25px;
     }
 }
 
