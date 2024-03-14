@@ -39,7 +39,7 @@ const NewFeed = () => {
                 <h3>Feedback Title</h3>
                 <p>Add a short, descriptive headline</p>
             </label>
-            <input style={{height:'100px'}} maxLength='255' type="text" />
+            <textarea style={{height:'100px'}} maxLength='255' type="text" />
             <button>Add Feedback</button>
         </form>
     </div>

@@ -101,6 +101,15 @@
     font-size: 20px;
 }
 
+.formfeed textarea {
+    background-color: hsla(240, 67%, 94%,0.4);
+    border-radius: 10px;
+    border: none;
+    color: hsla(230, 31%, 31%,0.8);
+    margin-top: 10px;
+    padding: 15px;
+}
+
 .formfeed label:nth-child(4) p {
     color: hsla(230, 31%, 31%,0.8);
     font-size: 18px;
@@ -237,7 +246,7 @@
 .formfeed button {
     padding: 14px 18px;
     font-size: 16px;
-    width: 160px;
+    width: 100%;
 }
 
 .formfeed button:hover {
@@ -306,7 +315,6 @@
 .formfeed button {
     padding: 14px 18px;
     font-size: 14px;
-    width: 140px;
 }
 
 .formfeed button:hover {
@@ -373,7 +381,6 @@
 .formfeed button {
     padding: 11px 15px;
     font-size: 10px;
-    width: 120px;
 }
 
 .formfeed button:hover {
