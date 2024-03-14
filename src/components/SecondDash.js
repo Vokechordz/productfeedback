@@ -4,9 +4,11 @@ import bulb from '../images/bulb_1769253.png'
 import caret from '../images/down-arrow_10495645.png'
 import { useState } from 'react'
 import Comments from './Comments'
+import { useNavigate } from 'react-router-dom'
 
 const SecondDash = () => {
 
+  const navigate= useNavigate()
   const [clicked, setClicked]= useState(false)
   const handleClicked= () => {
     setClicked(!clicked)
@@ -31,7 +33,7 @@ const SecondDash = () => {
     </div>
           </div> 
        
-          <button>+ Add Feedback</button>
+          <button onClick={()=>navigate("/dash/new")}>+ Add Feedback</button>
         </div>
 
 
