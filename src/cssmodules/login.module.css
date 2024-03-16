@@ -303,6 +303,7 @@
 @media screen and (max-width: 535px) {
     .login {
         width: 88%;
+        margin: 14% auto;
     }
     
     .login header h1 {

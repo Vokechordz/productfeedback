@@ -1,6 +1,7 @@
 import { useRef, useState, useEffect } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 import styles from '../cssmodules/login.module.css'
+import { BeatLoader } from 'react-spinners'
 
 import { useDispatch } from 'react-redux'
 import { setCredentials } from '../auth/authSlice'
@@ -45,7 +46,7 @@ const Login = () => {
             } else {
                 setErrMsg(err.data?.message);
             }
-            errRef.current.focus();
+            
         }
     }
 
@@ -54,7 +55,6 @@ const Login = () => {
 
     const errClass = errMsg ? "errmsg" : "offscreen"
 
-    if (isLoading) return <p>Loading...</p>
 
     const content = (
         <section className={styles.login}>
@@ -92,7 +92,9 @@ const Login = () => {
                     />
                     <div className={styles.buttondiv}>
                        <button onClick={()=> navigate('/create')}>Create</button>
-                       <button>Sign In</button>
+                       <button>
+                          {isLoading? <BeatLoader size={15} color='white'/>: 'Sign in'}
+                       </button>
                     </div>
                 </form>
             </main>
