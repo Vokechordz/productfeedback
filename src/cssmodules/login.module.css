@@ -1,0 +1,368 @@
+.login {
+    width: 43%;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    margin: 8% auto;
+    flex-direction: column;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.login header h1 {
+    margin-top: 80px;
+    color: #373f68;
+    font-size: 30px;
+    text-align: center;
+}
+
+.login header h2 {
+    margin-top: 50px;
+    color: #373f68;
+    font-size: 23px;
+}
+
+.rounddiv {
+    position: absolute;
+    top: -40px;
+    left: 50px;
+    width: 80px;
+    border-radius: 50%;
+    background-image: radial-gradient(128.88% 128.88% at 103.9% -10.39%, #e84d70 0%, #a337f6 53.09%, #28a7ed 100%);;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rounddiv p {
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form label {
+    color: hsl(230, 31%, 31%);
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.form input {
+    height: 40px;
+    margin-top: 12px;
+    border-radius: 10px;
+    background-color: hsla(240, 67%, 94%,0.4);
+    border: none;
+    color: hsla(230, 31%, 31%,0.8);
+    padding: 0 35px;
+    font-size: 18px;
+}
+
+.buttondiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.buttondiv button:nth-child(1),
+.buttondiv button:nth-child(2) {
+    background-color: #ad1fea;
+    color: white;
+    padding: 15px 20px;
+    font-size: 19px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    margin-top: 40px;
+    width: 180px;
+}
+
+.buttondiv button:nth-child(1):hover,
+.buttondiv button:nth-child(2):hover {
+    background-color: hsla(282, 83%, 52%,0.8);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1494px) {
+    .login {
+        width: 58%;
+        padding: 30px;
+    }
+    
+    .login header h1 {
+        margin-top: 80px;
+        font-size: 28px;
+    }
+    
+    .login header h2 {
+        font-size: 21px;
+    }
+    
+    .rounddiv {
+        position: absolute;
+        top: -40px;
+        left: 50px;
+        width: 75px;
+        border-radius: 50%;
+        background-image: radial-gradient(128.88% 128.88% at 103.9% -10.39%, #e84d70 0%, #a337f6 53.09%, #28a7ed 100%);;
+        aspect-ratio: 1/1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .rounddiv p {
+        color: white;
+        font-weight: bold;
+        font-size: 38px;
+    }
+    
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .form label {
+        color: hsl(230, 31%, 31%);
+        font-size: 15px;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+    
+    .form input {
+        height: 40px;
+        margin-top: 12px;
+        border-radius: 10px;
+        background-color: hsla(240, 67%, 94%,0.4);
+        border: none;
+        color: hsla(230, 31%, 31%,0.8);
+        padding: 0 35px;
+        font-size: 15px;
+    }
+    
+    .buttondiv {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .buttondiv button:nth-child(1),
+    .buttondiv button:nth-child(2) {
+        background-color: #ad1fea;
+        color: white;
+        padding: 13px 18px;
+        font-size: 19px;
+        font-weight: bold;
+        border-radius: 10px;
+        border: none;
+        margin-top: 40px;
+        width: 180px;
+    }
+}
+@media screen and (max-width: 998px) {
+    .login {
+        width: 68%;
+        position: relative;
+        justify-content: center;
+        display: flex;
+        margin: 8% auto;
+        flex-direction: column;
+        background-color: white;
+        padding: 30px;
+        border-radius: 15px;
+        position: relative;
+    }
+    
+    .login header h1 {
+        margin-top: 80px;
+        color: #373f68;
+        font-size: 26px;
+        text-align: center;
+    }
+    
+    .login header h2 {
+        margin-top: 50px;
+        color: #373f68;
+        font-size: 20px;
+    }
+    
+    .rounddiv {
+        position: absolute;
+        top: -32px;
+        left: 50px;
+        width: 68px;
+        border-radius: 50%;
+        background-image: radial-gradient(128.88% 128.88% at 103.9% -10.39%, #e84d70 0%, #a337f6 53.09%, #28a7ed 100%);;
+        aspect-ratio: 1/1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .rounddiv p {
+        color: white;
+        font-weight: bold;
+        font-size: 36px;
+    }
+    
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .form label {
+        color: hsl(230, 31%, 31%);
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+    
+    .form input {
+        height: 38px;
+        margin-top: 12px;
+        border: none;
+        color: hsla(230, 31%, 31%,0.8);
+        padding: 0 35px;
+        font-size: 14px;
+    }
+    
+    .buttondiv {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+    
+    .buttondiv button:nth-child(1),
+    .buttondiv button:nth-child(2) {
+        width: 100%;
+        padding: 13px 18px;
+        font-size: 19px;
+    }
+}
+@media screen and (max-width: 821px) {
+    .login {
+        width: 82%;
+    }
+    
+    .login header h1 {
+        font-size: 23px;
+    }
+    
+    .login header h2 {
+        margin-top: 50px;
+        color: #373f68;
+        font-size: 18px;
+    }
+    
+    .rounddiv {
+        position: absolute;
+        top: -32px;
+        left: 50px;
+        width: 65px;
+        border-radius: 50%;
+        background-image: radial-gradient(128.88% 128.88% at 103.9% -10.39%, #e84d70 0%, #a337f6 53.09%, #28a7ed 100%);;
+        aspect-ratio: 1/1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .rounddiv p {
+        color: white;
+        font-weight: bold;
+        font-size: 34px;
+    }
+    
+    .form label {
+        font-size: 14px;
+    }
+    
+    .form input {
+        height: 36px;
+        margin-top: 12px;
+        padding: 0 35px;
+        font-size: 14px;
+    }
+    
+    
+    .buttondiv button:nth-child(1),
+    .buttondiv button:nth-child(2) {
+        width: 100%;
+        padding: 13px 18px;
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 535px) {
+    .login {
+        width: 88%;
+    }
+    
+    .login header h1 {
+        font-size: 18px;
+    }
+    
+    .login header h2 {
+        margin-top: 50px;
+        color: #373f68;
+        font-size: 15px;
+    }
+    
+    .rounddiv {
+        position: absolute;
+        top: -32px;
+        left: 50px;
+        width: 60px;
+    }
+    
+    .rounddiv p {
+        font-size: 25px;
+    }
+    
+    .form label {
+        font-size: 12px;
+    }
+    
+    .form input {
+        height: 34px;
+        margin-top: 12px;
+        padding: 0 35px;
+        font-size: 13px;
+    }
+    
+    
+    .buttondiv button:nth-child(1),
+    .buttondiv button:nth-child(2) {
+        width: 100%;
+        padding: 11px 18px;
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

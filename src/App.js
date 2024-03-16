@@ -1,24 +1,24 @@
 import Dashboard from "./components/Dashboard";
 import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
-import Public from "./components/Public";
 import Login from "./components/Login";
 import NewFeed from "./components/NewFeed";
 import EditFeed from "./components/EditFeed";
+import Register from "./components/Register";
 
 
 function App() {
   return (
     <Routes> 
       <Route path="/" element={<Layout/>}>
-        <Route index element={<Public/>} />
-        <Route path="login" element={<Login/>} />
+        <Route index element={<Login/>} />
+        <Route path="create" element={<Register/>} />
 
         <Route path="dash" >
           <Route index element={<Dashboard/>} />
 
           <Route path="new" element={<NewFeed />} />
-          <Route path="edit" element={<EditFeed/>} />
+          <Route path=":id" element={<EditFeed/>} />
         </Route>
 
       </Route> 
