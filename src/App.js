@@ -17,8 +17,11 @@ function App() {
         <Route path="dash" >
           <Route index element={<Dashboard/>} />
 
-          <Route path="new" element={<NewFeed />} />
-          <Route path=":id" element={<EditFeed/>} />
+          <Route path="feedback">
+             <Route path="new" element={<NewFeed />} />
+             <Route path=":id" element={<EditFeed/>} />
+          </Route>
+          
         </Route>
 
       </Route> 

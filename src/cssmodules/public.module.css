@@ -1,0 +1,72 @@
+.publicpage {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    margin: 130px auto;
+}
+
+.publicpage1 {
+    padding: 15px 0;
+    background-image:  radial-gradient(128.88% 128.88% at 103.9% -10.39%,#e84d70 0%,#a337f6 53.09%,#28a7ed 100%);
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border: none;
+}
+
+.publicpage1 h1 {
+    color: white;
+    text-align: center;
+}
+
+.publicpage h5 {
+    font-size: 20px;
+    text-align: center;
+    color: #373f68;
+    margin-top: 30px;
+}
+
+.publicpage p {
+    margin-top: 30px;
+    color: #373f68;
+    font-size: 18px;
+}
+
+.publicpage button {
+    width: 180px;
+    background-color: #ad1fea;
+    color: white;
+    font-size: 19px;
+    margin: 10px auto;
+    padding: 10px ;
+    border: none;
+    border-radius: 10px;
+}
+
+.publicpage button:hover,
+.publicpage button:focus,
+.publicpage button:active {
+    background-color: hsla(282, 83%, 52%,0.8);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

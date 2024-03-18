@@ -3,17 +3,21 @@ import styles from '../cssmodules/seconddash.module.css'
 import bulb from '../images/bulb_1769253.png'
 import caret from '../images/down-arrow_10495645.png'
 import { useState } from 'react'
+import { selectCurrentUserId } from '../auth/authSlice'
 import Comments from './Comments'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 
 const SecondDash = () => {
+  const userId= useSelector(selectCurrentUserId)
+  console.log(userId)
 
   const navigate= useNavigate()
   const [clicked, setClicked]= useState(false)
   const handleClicked= () => {
     setClicked(!clicked)
   }
-
+  
   return (
     <div className={styles.seconddash}>
         <div className={styles.seconddash1}>
@@ -33,7 +37,7 @@ const SecondDash = () => {
     </div>
           </div> 
        
-          <button onClick={()=>navigate("/dash/new")}>+ Add Feedback</button>
+          <button onClick={()=>navigate("/dash/feedback/new")}>+ Add Feedback</button>
         </div>
 
 

@@ -4,7 +4,7 @@ import styles from '../cssmodules/login.module.css'
 import { BeatLoader } from 'react-spinners'
 
 import { useDispatch } from 'react-redux'
-import { setCredentials } from '../auth/authSlice'
+import { setCredentials, setUserId } from '../auth/authSlice'
 import { useLoginMutation } from '../auth/authApiSlice'
 
 const Login = () => {
@@ -31,8 +31,9 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         try {
-            const { accessToken } = await login({ username, password }).unwrap()
+            const { accessToken, userId } = await login({ username, password }).unwrap()
             dispatch(setCredentials({ accessToken }))
+            dispatch(setUserId({ userId }))
             setUsername('')
             setPassword('')
             navigate('/dash')
