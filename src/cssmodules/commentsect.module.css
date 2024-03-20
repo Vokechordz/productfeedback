@@ -1,0 +1,291 @@
+.content {
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.content h2 {
+    color: #373f68;
+}
+
+.firstcom {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.secondcom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.secondcom a {
+    margin-left: auto;
+    margin-right: 15px;
+}
+
+.secondcom a:hover {
+    cursor: pointer;
+} 
+
+.secondcom img {
+    margin-right: 80px;
+}
+
+.thirdcom {
+    width: 100%;
+}
+
+.thirdcom h3 {
+    color: #373f68;
+}
+
+.thirdcom p{
+    color: #373f68;
+    font-size: 18px;
+}
+
+.thirdcom p:nth-child(3) {
+    margin-top: 20px;
+}
+
+.form {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.form input {
+    font-size: 18px;
+    width: 80%;
+    padding: 15px 15px 50px 15px;
+    color: #373f68;
+    border-radius: 10px;
+    background-color: hsla(240, 67%, 94%,0.4);
+    border: none;
+}
+
+.form button {
+    margin-left: auto;
+    background-color: #ad1fea;
+    padding: 15px 20px;
+    color: white;
+    border: none;
+    font-weight: bold;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.form button:hover {
+    cursor: pointer;
+    background-color: hsla(282, 83%, 52%,0.8);
+}
+
+@media screen and (max-width: 1189px) {
+    .content h2 {
+        font-size: 25px;
+    }
+
+    .firstcom {
+        margin-bottom: 28px;
+        margin-top: 28px;
+    }
+    
+    .secondcom img {
+        margin-right: 50px;
+    }
+    
+    .thirdcom p{
+        font-size: 17px;
+    }
+    
+    .form input {
+        font-size: 17px;
+        width: 70%;
+        padding: 15px 15px 50px 15px;
+    }
+    
+    .form button {
+        padding: 14px 19px;
+    }
+    
+}
+@media screen and (max-width: 690px) {
+    .content h2 {
+        font-size: 23px;
+    }
+
+    .firstcom {
+        margin-bottom: 28px;
+        margin-top: 28px;
+    }
+    
+    .secondcom img {
+        margin-right: 45px;
+    }
+    
+    .thirdcom p{
+        font-size: 16px;
+    }
+    
+    .form input {
+        font-size: 16px;
+        width: 65%;
+        padding: 14px 14px 48px 14px;
+    }
+    
+    .form button {
+        padding: 13px 18px;
+    }
+    
+}
+@media screen and (max-width: 549px) {
+    .content h2 {
+        font-size: 22px;
+    }
+
+    .firstcom {
+        margin-bottom: 28px;
+        margin-top: 28px;
+    }
+
+    .secondcom a {
+        font-size: 15px;
+    }
+    
+    .secondcom img {
+        margin-right: 44px;
+    }
+    
+    .thirdcom p{
+        font-size: 16px;
+    }
+    
+    .form input {
+        font-size: 16px;
+        width: 60%;
+        padding: 14px 14px 48px 14px;
+    }
+    
+    .form button {
+        padding: 13px 18px;
+    }
+    
+}
+@media screen and (max-width: 520px) {
+    .content h2 {
+        font-size: 16px;
+    }
+
+    .firstcom {
+        margin-bottom: 28px;
+        margin-top: 28px;
+    }
+
+    .secondcom a {
+        font-size: 14px;
+    }
+    
+    .secondcom img {
+        margin-right: 38px;
+    }
+
+    .thirdcom h3 {
+        font-size: 13px;
+    }
+    
+    .thirdcom p{
+        font-size: 13px;
+    }
+    
+    .form input {
+        font-size: 13px;
+        width: 58%;
+        padding: 14px 14px 45px 14px;
+    }
+    
+    .form button {
+        padding: 11px 15px;
+        font-size: 11px;
+    }
+    
+}
+@media screen and (max-width: 434px) {
+    .content h2 {
+        font-size: 14px;
+    }
+
+    .firstcom {
+        margin-bottom: 28px;
+        margin-top: 28px;
+    }
+
+    .secondcom a {
+        font-size: 12px;
+    }
+    
+    .secondcom img {
+        margin-right: 34px;
+    }
+
+    .thirdcom h3 {
+        font-size: 12px;
+    }
+    
+    .thirdcom p{
+        font-size: 12px;
+    }
+    
+    .form input {
+        font-size: 12px;
+        width: 58%;
+        padding: 13px 13px 44px 13px;
+    }
+    
+    .form button {
+        padding: 11px 15px;
+        font-size: 11px;
+    }
+    
+}
+@media screen and (max-width: 420px) {
+    .content h2 {
+        font-size: 13px;
+    }
+
+    .firstcom {
+        margin-bottom: 28px;
+        margin-top: 28px;
+    }
+
+    .secondcom a {
+        font-size: 11px;
+    }
+    
+    .secondcom img {
+        margin-right: 34px;
+    }
+
+    .thirdcom h3 {
+        font-size: 12px;
+    }
+    
+    .thirdcom p{
+        font-size: 12px;
+    }
+    
+    .form input {
+        font-size: 11px;
+        width: 58%;
+        padding: 13px 13px 44px 13px;
+    }
+    
+    .form button {
+        padding: 10px 14px;
+        font-size: 9px;
+    }
+
+    .icon {
+        width: 10px;
+    }
+    
+}

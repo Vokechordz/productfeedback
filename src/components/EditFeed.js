@@ -14,14 +14,14 @@ import CommentSection from './CommentSection'
 
 const EditFeed = () => {
     
-    const { id } = useParams()
+    const { id: feedbackId } = useParams()
 
     const userId= useSelector(selectCurrentUserId)
     console.log(userId.userId)
 
     const { feedback } = useGetFeedbacksQuery("usersList", {
         selectFromResult: ({ data }) => ({
-            feedback: data?.entities[id]
+            feedback: data?.entities[feedbackId]
         }),
     })
 
@@ -58,7 +58,7 @@ const EditFeed = () => {
         
         </div>
 
-        <CommentSection />
+        <CommentSection feedbackId={feedbackId} />
         </div>
     )
 
