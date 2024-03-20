@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useGetCommentsQuery } from '../features/comments/commentsApiSlice'
 import { useGetUsersQuery } from '../features/users/usersApiSlice';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
+import ReplySection from './ReplySection';
 
 const CommentSection = ({ feedbackId }) => {
 
@@ -77,7 +78,7 @@ const CommentSection = ({ feedbackId }) => {
                             )
                         }
                     })}
-                       
+                       <ReplySection commentId={comment._id} userId={comment.userId} />
                 </div>
             ))}
         </div>
