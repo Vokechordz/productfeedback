@@ -60,7 +60,7 @@ const CommentSection = ({ feedbackId }) => {
                         if (user._id=== comment.userId) {
                             return (
                                 <div className={styles.secondcom}>
-                                    <img src={user.profilepic} alt='p' />
+                                   <img src={`http://localhost:3500/userImages/${user.profilepic}`} alt='p' />
                                     <div className={styles.thirdcom}>
                                         <h3>{user.name}</h3>
                                         <p>@{user.username}</p>

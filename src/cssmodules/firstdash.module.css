@@ -15,7 +15,7 @@
 }
 
 .dashone h4 {
-    font-size: 20px;
+    font-size: 30px;
     color: white;
 }
 
@@ -39,6 +39,7 @@
     border-radius: 10px;
     border: none;
     color: #4661e6;
+    font-size: 15px;
     font-weight: bold;
     background-color: hsla(240, 67%, 94%,0.5);
 }
@@ -68,9 +69,11 @@
 
 .dashthree1 h4 {
     color: #373f68;
+    font-size: 20px;
 }
 .dashthree1 a {
     color:#4661e6 ;
+    font-size: 18px;
 }
 
 .dashthree2 {
@@ -80,6 +83,10 @@
     margin-left: 20px;
     justify-content: space-between;
     align-items: center;
+}
+
+.dashthree2 ul {
+    font-size: 21px;
 }
 
 .dashthree2 ul li::marker {
@@ -94,6 +101,10 @@
     margin-left: 20px;
     justify-content: space-between;
     align-items: center;
+}
+
+.dashthree3 ul {
+    font-size: 21px;
 }
 
 .dashthree3 ul li::marker {
@@ -111,6 +122,10 @@
 
 .dashthree4 ul li::marker {
     color: #cfd7ff;
+}
+
+.dashthree4 ul {
+    font-size: 21px;
 }
 
 .dashthree2 p, .dashthree3 p, .dashthree4 p{

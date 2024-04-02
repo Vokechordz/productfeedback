@@ -31,6 +31,9 @@
 
 .secondcom img {
     margin-right: 80px;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    width: 77px;
 }
 
 .thirdcom {
@@ -93,6 +96,7 @@
     
     .secondcom img {
         margin-right: 50px;
+        width: 70px;
     }
     
     .thirdcom p{
@@ -122,6 +126,7 @@
     
     .secondcom img {
         margin-right: 45px;
+        width: 63px;
     }
     
     .thirdcom p{
@@ -155,6 +160,7 @@
     
     .secondcom img {
         margin-right: 44px;
+        width: 55px;
     }
     
     .thirdcom p{
@@ -188,6 +194,7 @@
     
     .secondcom img {
         margin-right: 38px;
+        width: 51px;
     }
 
     .thirdcom h3 {
@@ -226,6 +233,7 @@
     
     .secondcom img {
         margin-right: 34px;
+        width: 45px;
     }
 
     .thirdcom h3 {
@@ -264,6 +272,7 @@
     
     .secondcom img {
         margin-right: 34px;
+        width: 40px;
     }
 
     .thirdcom h3 {
