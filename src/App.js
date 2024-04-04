@@ -3,8 +3,10 @@ import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import Login from "./components/Login";
 import NewFeed from "./components/NewFeed";
-import EditFeed from "./components/EditFeed";
+import Feed from "./components/Feed";
 import Register from "./components/Register";
+import EditFeedForm from "./components/EditFeedForm";
+import EditFeed from "./components/Feed";
 
 
 function App() {
@@ -19,7 +21,10 @@ function App() {
 
           <Route path="feedback">
              <Route path="new" element={<NewFeed />} />
-             <Route path=":id" element={<EditFeed/>} />
+             <Route path=":id" >
+                <Route index element={<Feed/>} />
+                <Route path="edit" element={<EditFeedForm/>} />
+             </Route>
           </Route>
           
         </Route>

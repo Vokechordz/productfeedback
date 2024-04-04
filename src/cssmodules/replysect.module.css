@@ -2,7 +2,7 @@
     padding: 30px;
     background-color: white;
     border-radius: 15px;
-    margin-left: 80px;
+    margin-left: 70px;
 }
 
 .content h2 {
@@ -87,6 +87,7 @@
 @media screen and (max-width: 1189px) {
     .content h2 {
         font-size: 25px;
+        margin-right: 500px;
     }
 
     .firstcom {

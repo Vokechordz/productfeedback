@@ -21,6 +21,11 @@
     border-radius: 8px;
 }
 
+.editfeedm button:hover {
+    cursor: pointer;
+    background-color: hsla(282, 83%, 52%,0.8);
+}
+
 .editfeed1 {
     display: flex;
     flex-direction: row;

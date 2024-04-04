@@ -52,7 +52,7 @@ const ReplySection = ({ commentId, userId }) => {
                         if (user._id=== reply.userId) {
                             return (
                                 <div className={styles.secondcom}>
-                                    <img src={`http://localhost:3500/userImages/${user.profilepic}`} alt='p' />
+                                    <img src={`http://localhost:3500/userImages/${user.profilepic}`} alt='' />
                                     <div className={styles.thirdcom}>
                                         <h3>{user.name}</h3>
                                         <p>@{user.username}</p>

@@ -1,0 +1,405 @@
+.newfeed {
+    width: 43%;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    margin: 8% auto;
+    flex-direction: column;
+}
+
+.newfeed1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.newfeed1 img {
+    display: block;
+    width: 30px;
+}
+
+.newfeed1 a {
+    font-weight: bold;
+    font-size: 22px;
+    color: hsla(230, 31%, 31%,0.8);
+    text-decoration: none;
+}
+
+.newfeed1 a:hover {
+    text-decoration: underline;
+}
+
+.rounddiv {
+    position: absolute;
+    top: 88px;
+    left: 50px;
+    width: 80px;
+    border-radius: 50%;
+    background-image: radial-gradient(128.88% 128.88% at 103.9% -10.39%, #e84d70 0%, #a337f6 53.09%, #28a7ed 100%);;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rounddiv p {
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.formfeed {
+    display: flex;
+    flex-direction: column;
+    margin-top: 90px;
+    background-color: white;
+    padding: 80px 50px 50px 50px;
+    border-radius: 15px;
+}
+
+.formfeed h1 {
+    color: #373f68;
+}
+
+.formfeed label:nth-child(2) {
+    margin-top: 40px;
+}
+
+.formfeed label:nth-child(2) h3 {
+    color: #373f68;
+    font-size: 20px;
+}
+
+.formfeed label:nth-child(2) p {
+    color: hsla(230, 31%, 31%,0.8);
+    font-size: 18px;
+}
+
+.formfeed input {
+    height: 52px;
+    margin-top: 12px;
+    border-radius: 10px;
+    background-color: hsla(240, 67%, 94%,0.4);
+    border: none;
+    color: hsla(230, 31%, 31%,0.8);
+    padding: 0 35px;
+    font-size: 18px;
+
+}
+
+.formfeed input:focus {
+    border: 1px solid blue;
+}
+
+.formfeed label:nth-child(4) {
+    margin-top: 35px;
+}
+
+.formfeed label:nth-child(4) h3 {
+    color: #373f68;
+    font-size: 20px;
+}
+
+.formfeed textarea {
+    background-color: hsla(240, 67%, 94%,0.4);
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+
+    color: hsla(230, 31%, 31%,0.8);
+    margin-top: 10px;
+    padding: 15px;
+}
+
+.formfeed label:nth-child(4) p {
+    color: hsla(230, 31%, 31%,0.8);
+    font-size: 18px;
+}
+
+.formfeed select {
+    height: 52px;
+    margin-top: 12px;
+    border-radius: 10px;
+    background-color: hsla(240, 67%, 94%,0.4);
+    border: none;
+    padding: 0 35px;
+    color: hsla(230, 31%, 31%,0.8);
+    font-size: 18px;
+
+}
+
+.formfeed select:focus {
+    border: 1px solid blue;
+}
+
+.formfeed label:nth-child(6) {
+    margin-top: 40px;
+}
+
+.formfeed label:nth-child(6) h3 {
+    color: #373f68;
+    font-size: 20px;
+}
+
+.formfeed label:nth-child(6) p {
+    color: hsla(230, 31%, 31%,0.8);
+    font-size: 18px;
+}
+
+.formfeed button {
+    background-color: #ad1fea;
+    color: white;
+    padding: 15px 20px;
+    font-size: 19px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    margin-top: 40px;
+    width: 180px;
+    margin-left: auto;
+}
+
+.formfeed button:hover {
+    background-color: hsla(282, 83%, 52%,0.8);
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1498px) {
+    .newfeed {
+        width: 52%;
+    }
+}
+@media screen and (max-width: 1224px) {
+    .newfeed {
+        width: 62%;
+    }
+}
+@media screen and (max-width: 941px) {
+    .newfeed {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 738px) {
+    .newfeed {
+        width: 88%;
+    }
+}
+@media screen and (max-width: 580px) {
+    .formfeed {
+        padding: 80px 35px 35px 35px;
+    }
+
+    .formfeed h1 {
+        font-size: 27px;
+    }
+
+    
+.newfeed1 img {
+    width: 28px;
+}
+
+.newfeed1 a {
+    font-size: 20px;
+}
+
+.rounddiv {
+    width: 78px;
+}
+
+.rounddiv p {
+    font-size: 38px;
+}
+
+.formfeed label:nth-child(2) h3 {
+    font-size: 19px;
+}
+
+.formfeed label:nth-child(2) p {
+    font-size: 17px;
+}
+
+.formfeed input {
+    font-size: 17px;
+}
+
+.formfeed label:nth-child(4) h3 {
+    font-size: 17px;
+}
+
+.formfeed label:nth-child(4) p {
+    font-size: 17px;
+}
+
+.formfeed select {
+    font-size: 17px;
+}
+
+.formfeed label:nth-child(6) h3 {
+    font-size: 18px;
+}
+
+.formfeed label:nth-child(6) p {
+    color: hsla(230, 31%, 31%,0.8);
+    font-size: 18px;
+}
+
+.formfeed button {
+    padding: 14px 18px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.formfeed button:hover {
+    background-color: hsla(282, 83%, 52%,0.8);
+    cursor: pointer;
+}
+
+}
+@media screen and (max-width: 475px) {
+    .formfeed {
+        padding: 80px 35px 35px 35px;
+
+    }
+
+    
+.newfeed1 img {
+    width: 22px;
+}
+
+.newfeed1 a {
+    font-size: 15px;
+}
+
+.rounddiv {
+    width: 68px;
+}
+
+.rounddiv p {
+    font-size: 32px;
+}
+
+.formfeed label:nth-child(2) h3 {
+    font-size: 18px;
+}
+
+.formfeed label:nth-child(2) p {
+    font-size: 15px;
+}
+
+.formfeed input {
+    font-size: 15px;
+}
+
+.formfeed label:nth-child(4) h3 {
+    font-size: 17px;
+}
+
+.formfeed label:nth-child(4) p {
+    font-size: 15px;
+}
+
+.formfeed select {
+    font-size: 13px;
+    height: 42px;
+}
+
+.formfeed label:nth-child(6) h3 {
+    font-size: 16px;
+}
+
+.formfeed label:nth-child(6) p {
+    color: hsla(230, 31%, 31%,0.8);
+    font-size: 18px;
+}
+
+.formfeed button {
+    padding: 14px 18px;
+    font-size: 14px;
+}
+
+.formfeed button:hover {
+    background-color: hsla(282, 83%, 52%,0.8);
+    cursor: pointer;
+}
+
+}
+@media screen and (max-width: 404px) {
+.newfeed1 img {
+    width: 22px;
+}
+
+.formfeed h1 {
+    font-size: 18px;
+}
+
+.newfeed1 a {
+    font-size: 13px;
+}
+
+.rounddiv {
+    width: 60px;
+}
+
+.rounddiv p {
+    font-size: 28px;
+}
+
+.formfeed label:nth-child(2) h3 {
+    font-size: 14px;
+}
+
+.formfeed label:nth-child(2) p {
+    font-size: 13px;
+}
+
+.formfeed input {
+    font-size: 13px;
+}
+
+.formfeed label:nth-child(4) h3 {
+    font-size: 14px;
+}
+
+.formfeed label:nth-child(4) p {
+    font-size: 13px;
+}
+
+.formfeed select {
+    font-size: 13px;
+    height: 40px;
+}
+
+.formfeed label:nth-child(6) h3 {
+    font-size: 14px;
+}
+
+.formfeed label:nth-child(6) p {
+    color: hsla(230, 31%, 31%,0.8);
+    font-size: 13px;
+}
+
+.formfeed button {
+    padding: 11px 15px;
+    font-size: 10px;
+}
+
+.formfeed button:hover {
+    background-color: hsla(282, 83%, 52%,0.8);
+    cursor: pointer;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
