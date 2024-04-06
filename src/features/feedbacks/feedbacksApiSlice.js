@@ -34,11 +34,36 @@ export const feedbacksApiSlice = apiSlice.injectEndpoints({
                 } else return [{ type: 'Feedback', id: 'LIST' }]
             }
         }),
+        addNewFeedback: builder.mutation({
+            query: initialFeedback => ({
+                url: '/feedbacks',
+                method: 'POST',
+                body: {
+                    ...initialFeedback,
+                }
+            }),
+            invalidatesTags: [
+                { type: 'Note', id: "LIST" }
+            ]
+        }),
+        updateFeedback: builder.mutation({
+            query: initialFeedback => ({
+                url: '/feedbacks',
+                method: 'PATCH',
+                body: {
+                    ...initialFeedback,
+                }
+            }),
+            invalidatesTags: (result, error, arg) => [
+                { type: 'Feedback', id: arg.id }
+            ]
+        })
     }),
 })
 
 export const {
     useGetFeedbacksQuery,
+    useAddNewFeedbackMutation
 } = feedbacksApiSlice
 
 // returns the query result object
