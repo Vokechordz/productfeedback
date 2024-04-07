@@ -5,6 +5,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import { useAddNewFeedbackMutation } from '../features/feedbacks/feedbacksApiSlice'
 import { selectCurrentUserId } from '../auth/authSlice'
+import { BeatLoader } from 'react-spinners'
 
 const NewFeed = () => {
 
@@ -76,7 +77,9 @@ const NewFeed = () => {
                 <p>Include any specific comments on what should be improved, added, etc.</p>
             </label>
             <textarea value={details} onChange={onContentChanged} style={{height:'100px'}} maxLength='255' type="text" />
-            <button type='submit'>Add Feedback</button>
+            <button type='submit'>
+               {isLoading? <BeatLoader size={15} color='white'/>: 'Add Feedback'}
+            </button>
         </form>
     </div>
   )
