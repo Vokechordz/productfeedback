@@ -25,6 +25,7 @@ const NewFeed = () => {
     const [title, setTitle] = useState('')
     const [category, setCategory] = useState('')
     const [details, setDetails] = useState('')
+    const [msg, setMsg]= useState('')
 
 
     const onTitleChanged = e => setTitle(e.target.value)
@@ -38,6 +39,7 @@ const NewFeed = () => {
         if (canSave) {
             const res= await addNewFeedback({ userId, title, category, details })
             console.log(res)
+            setMsg(res.data?.message)
         }
     }
 
@@ -57,7 +59,7 @@ const NewFeed = () => {
         <form action="" className={styles.formfeed} onSubmit={onSaveFeedbackClicked}>
             <h1>Create New Feedback</h1>
             <label htmlFor="">
-                <h3>Feedback Title</h3>
+                <h3>Feedback Title</h3> <p>{msg}</p>
                 <p>Add a short, descriptive headline</p>
             </label>
             <input onChange={onTitleChanged} value={title} type="text" />
@@ -66,6 +68,7 @@ const NewFeed = () => {
                 <p>Choose a category for your feedback</p>
             </label>
             <select onChange={onCategoryChanged} value={category} name="" id="">
+                <option value="" disabled>choose</option>
                 <option value="Feature">Feature</option>
                 <option value="UI">UI</option>
                 <option value="UX">UX</option>
