@@ -13,7 +13,7 @@ const Feedback = ({ feedbackId }) => {
             feedback: data?.entities[feedbackId]
         }),
     })
-    console.log(feedback)
+    
 
     const { id }= useParams()
 

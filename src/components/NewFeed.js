@@ -11,8 +11,7 @@ const NewFeed = () => {
 
     const navigate= useNavigate()
 
-    const currentId= useSelector(selectCurrentUserId)
-    const userId= currentId.userId
+    const userId= useSelector(selectCurrentUserId)
     console.log(userId)
 
     const [addNewFeedback, {
