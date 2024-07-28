@@ -6,7 +6,7 @@ import NewFeed from "./components/NewFeed";
 import Feed from "./components/Feed";
 import Register from "./components/Register";
 import EditFeedForm from "./components/EditFeedForm";
-import EditFeed from "./components/Feed";
+import EditFeed from "./components/EditFeed";
 
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
              <Route path="new" element={<NewFeed />} />
              <Route path=":id" >
                 <Route index element={<Feed/>} />
-                <Route path="edit" element={<EditFeedForm/>} />
+                <Route path="edit" element={<EditFeed/>} />
              </Route>
           </Route>
           

@@ -34,11 +34,35 @@ export const repliesApiSlice = apiSlice.injectEndpoints({
                 } else return [{ type: 'Reply', id: 'LIST' }]
             }
         }),
+        addNewReply: builder.mutation({
+            query: initialReply => ({
+                url: '/replies',
+                method: 'POST',
+                body: {
+                    ...initialReply,
+            }
+            }),
+            invalidatesTags: [
+                { type: 'Reply', id: "LIST" }
+            ]
+        }),
+        deleteReply: builder.mutation({
+            query: ({ id }) => ({
+                url: `/replies`,
+                method: 'DELETE',
+                body: { id }
+            }),
+            invalidatesTags: (result, error, arg) => [
+                { type: 'Reply', id: arg.id }
+            ]
+        })
     }),
 })
 
 export const {
     useGetRepliesQuery,
+    useAddNewReplyMutation,
+    useDeleteReplyMutation
 } = repliesApiSlice
 
 // returns the query result object

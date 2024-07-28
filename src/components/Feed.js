@@ -11,6 +11,8 @@ import { selectCurrentUserId } from '../auth/authSlice'
 import Feedback from './Feedback'
 import { useGetFeedbacksQuery } from '../features/feedbacks/feedbacksApiSlice'
 import CommentSection from './CommentSection'
+import CommentBox from './CommentBox'
+import { useGetCommentsQuery } from '../features/comments/commentsApiSlice'
 
 const EditFeed = () => {
     
@@ -18,7 +20,7 @@ const EditFeed = () => {
     const navigate= useNavigate()
 
     const userId= useSelector(selectCurrentUserId)
-    console.log(userId.userId)
+    console.log(userId)
 
     const { feedback } = useGetFeedbacksQuery("usersList", {
         selectFromResult: ({ data }) => ({
@@ -26,8 +28,36 @@ const EditFeed = () => {
         }),
     })
 
+    const {
+        data: comments,
+        isLoading: commentsLoading,
+        isSuccess: commentsSuccess,
+        isError: commentsError,
+        error: commentsErrorDetail
+    } = useGetCommentsQuery('commentsList', {
+        pollingInterval: 15000,
+        refetchOnFocus: true,
+        refetchOnMountOrArgChange: true
+    });
 
-    if (!feedback) return <p>loading...</p>
+    if (!feedback) {
+        return <p>Loading feedback...</p>
+    }
+
+    if (commentsLoading) {
+        return <p>Loading comments...</p>
+    }
+
+    if (commentsError) {
+        return <p>Error loading comments: {commentsErrorDetail.message}</p>
+    }
+
+    const { entities } = comments
+    const commentsData = Object.values(entities)
+    const filteredCommentsData = commentsData.filter(comment => comment.feedbackId === feedbackId)
+    const commentsCount = filteredCommentsData.length
+
+
 
 
     return (
@@ -54,12 +84,13 @@ const EditFeed = () => {
         
             <div className={styles.comments3}>
                 <img src={chat} alt="" />
-                <p>2</p>
+                <p>{commentsCount}</p>
             </div>
         
         </div>
 
         <CommentSection feedbackId={feedbackId} />
+        <CommentBox feedbackId={feedbackId}/>
         </div>
     )
 

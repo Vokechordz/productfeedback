@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from '../cssmodules/replysect.module.css'
-import { useGetRepliesQuery } from '../features/replies/repliesApiSlice';
+import { useDeleteReplyMutation, useGetRepliesQuery } from '../features/replies/repliesApiSlice';
 import { useGetUsersQuery } from '../features/users/usersApiSlice';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
@@ -29,6 +29,12 @@ const ReplySection = ({ commentId, userId }) => {
         refetchOnMountOrArgChange: true
     });
     
+    const [deleteReply, {
+        isSuccess: isDelSuccess,
+        isError: isDelError,
+        error: delerror
+    }] = useDeleteReplyMutation()
+
 
     if (!isSuccess || !isUsersSuccess) return <p>Loading...</p>
 
@@ -63,7 +69,7 @@ const ReplySection = ({ commentId, userId }) => {
                                             {reply.content}
                                         </p>
                                     </div>
-                                        <FontAwesomeIcon className={styles.icon} role='button' icon={faTrash}/>
+                                        <FontAwesomeIcon onClick={()=> deleteReply({ id: reply._id })} className={styles.icon} role='button' icon={faTrash}/>
                                 </div>
                             )
                         }

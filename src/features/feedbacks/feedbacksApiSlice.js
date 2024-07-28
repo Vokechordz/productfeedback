@@ -57,13 +57,25 @@ export const feedbacksApiSlice = apiSlice.injectEndpoints({
             invalidatesTags: (result, error, arg) => [
                 { type: 'Feedback', id: arg.id }
             ]
+        }),
+        deleteFeedback: builder.mutation({
+            query: ({ id }) => ({
+                url: `/feedbacks`,
+                method: 'DELETE',
+                body: { id }
+            }),
+            invalidatesTags: (result, error, arg) => [
+                { type: 'Feedback', id: arg.id }
+            ]
         })
     }),
 })
 
 export const {
     useGetFeedbacksQuery,
-    useAddNewFeedbackMutation
+    useAddNewFeedbackMutation,
+    useUpdateFeedbackMutation,
+    useDeleteFeedbackMutation
 } = feedbacksApiSlice
 
 // returns the query result object

@@ -1,0 +1,28 @@
+.commentbox {
+    background-color: white;
+    margin-top: 30px;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.commentbox h3 {
+    color: #373f68;
+    font-size: 22px;
+}
+
+.commentbox textarea {
+    width: 100%;
+    background-color: hsla(240, 67%, 94%,0.4);
+    outline: none;
+    margin-top: 20px;
+    color: #373f68;
+    font-size: 14px;
+    padding: 20px 0 0 20px;
+}
+
+.boxcap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}

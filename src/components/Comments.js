@@ -4,6 +4,7 @@ import { useGetFeedbacksQuery } from '../features/feedbacks/feedbacksApiSlice'
 import Feedback from './Feedback'
 
 const Comments = () => {
+  
 
   const {
     data: feedbacks,

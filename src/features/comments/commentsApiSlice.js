@@ -34,11 +34,35 @@ export const commentsApiSlice = apiSlice.injectEndpoints({
                 } else return [{ type: 'Comment', id: 'LIST' }]
             }
         }),
+        addNewComment: builder.mutation({
+            query: initialComment => ({
+                url: '/comments',
+                method: 'POST',
+                body: {
+                    ...initialComment,
+            }
+            }),
+            invalidatesTags: [
+                { type: 'Comment', id: "LIST" }
+            ]
+        }),
+        deleteComment: builder.mutation({
+            query: ({ id }) => ({
+                url: `/comments`,
+                method: 'DELETE',
+                body: { id }
+            }),
+            invalidatesTags: (result, error, arg) => [
+                { type: 'Comment', id: arg.id }
+            ]
+        })
     }),
 })
 
 export const {
     useGetCommentsQuery,
+    useAddNewCommentMutation,
+    useDeleteCommentMutation
 } = commentsApiSlice
 
 // returns the query result object
